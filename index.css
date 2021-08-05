@@ -1,0 +1,199 @@
+
+*{margin:0;padding:0;box-sizing:border-box;}
+ul,li{list-style:none;}
+body{background:#EAE8EB;}
+a{text-decoration: none;color:#6C6C6C;}
+.w{width:1194px;margin:0 auto;}
+.fl{float:left;}
+.fr{float:right;}
+
+.shortcut{
+    height:36px;
+    line-height:36px;
+    font-size:13px;
+    background:#F5F5F5;
+    color:#6C6C6C;
+}
+.shortcut-container{
+    position: relative;
+}
+.shortcut-container ul .li-1{
+    position:relative;
+    padding:0 5px;
+}
+
+#geo{
+    position:absolute;
+    left:0;
+    z-index:2;
+    background:white;
+    width:255px;
+    height:288px;
+   visibility:hidden;
+   overflow-y:scroll;
+}
+#geo a{
+    display:block;
+    padding-left:10px;
+}
+#geo a:hover{
+    cursor:pointer;
+   background:#EAE8EB;
+}
+.shortcut-container ul .li-1:hover{
+    background:white;
+}
+.shortcut-container ul .li-1:hover #geo{
+    visibility:visible;
+ }
+.shortcut-container .left-box ul .li-1{
+    margin-right:10px;
+}
+.shortcut-container .left-box ul .li-2 .a-1{
+   color:red;
+}
+
+.shortcut-container .right-box ul>li{
+    float:left;
+    padding:0 5px;
+    margin:0 10px;
+
+}
+
+/* 我的淘宝 */
+.shortcut-container .right-box ul .li-1{
+    position: relative;
+}
+.shortcut-container .right-box ul .li-1:hover{
+    background:white;
+}
+.shortcut-container .right-box ul .li-1:hover .mytaobao{
+   visibility:visible;
+}
+.shortcut-container .right-box ul .li-1 .mytaobao{
+   position: absolute;
+   left:0;
+   width:85px;
+   height:74px;
+   background:white;
+   visibility:hidden;
+}
+.shortcut-container .right-box ul .li-1 .mytaobao a{
+    display:block;
+    padding-left:5px;
+    
+}
+.shortcut-container .right-box ul .li-1 .mytaobao a:hover{
+    background:#EAE8EB;
+    cursor:pointer;
+}
+
+/* 我的收藏夹 */
+.shortcut-container .right-box ul .li-3{
+    position: relative;
+}
+.shortcut-container .right-box ul .li-3:hover{
+    background:white;
+}
+.shortcut-container .right-box ul .li-3:hover .collections{
+   visibility:visible;
+}
+.shortcut-container .right-box ul .li-3 .collections{
+   position: absolute;
+   left:0;
+   width:85px;
+   height:74px;
+   background:white;
+   visibility:hidden;
+}
+.shortcut-container .right-box ul .li-3 .collections a{
+    display:block;
+    padding-left:5px;
+    
+}
+.shortcut-container .right-box ul .li-3 .collections a:hover{
+    background:#EAE8EB;
+    cursor:pointer;
+}
+
+
+
+.shortcut-container .right-box ul .li-5{
+   
+}
+.shortcut-container .right-box ul i{
+    
+    margin-top:12px;
+    margin-left:5px;
+    margin-right:5px;
+    display:inline-block;
+    width:1px;
+    height:13px;
+    background:#DFDFE4;
+}
+
+/* 网站导航 */
+.shortcut-container .right-box ul>.li-8{
+    
+}
+.shortcut-container .right-box ul>.li-8:hover{
+    background:white;
+}
+.shortcut-container .right-box ul>.li-8:hover .sites-nav{
+   visibility:visible;
+}
+.shortcut-container .right-box ul>.li-8 .sites-nav{
+   position: absolute;
+   left:0;
+   width:1194px;
+   width:1184px;
+   height:314px;
+   background:white;
+   visibility:hidden;
+}
+.shortcut-container .right-box ul>.li-8 .sites-nav li{
+    display:block;
+    width:270px;
+}
+.shortcut-container .right-box ul>.li-8 .sites-nav>.li-1,
+.shortcut-container .right-box ul>.li-8 .sites-nav>.li-2,
+.shortcut-container .right-box ul>.li-8 .sites-nav>.li-3
+{
+    border-right:1px solid #EFEFEF;
+}
+.shortcut-container .right-box ul>.li-8 .sites-nav>.li-1>h1{
+   color:#F84404;
+}
+.shortcut-container .right-box ul>.li-8 .sites-nav>.li-2>h1{
+    color:#A6BB44;
+}
+.shortcut-container .right-box ul>.li-8 .sites-nav>.li-3>h1{
+    color:#DC699F;
+}
+.shortcut-container .right-box ul>.li-8 .sites-nav>.li-4>h1{
+    color:#2C9ED5;
+}
+
+
+
+
+
+
+
+
+
+/* header区 */
+header{
+    height:122px;
+    background:#E9E6E8;
+}
+.logo h1 .logo-bd {
+    display: block;
+    margin-left: 22px;
+    padding-top: 58px;
+    width: 142px;
+    height: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(//gw.alicdn.com/imgextra/i3/O1CN01uRz3de23mzWofmPYX_!!6000000007299-2-tps-143-59.png) 0 0 no-repeat;
+}
