@@ -52,7 +52,9 @@ a{text-decoration: none;color:#6C6C6C;}
 .shortcut-container .left-box ul .li-2 .a-1{
    color:red;
 }
-
+.shortcut-container .left-box ul .li-2 .a-2:hover{
+    color:red;
+ }
 .shortcut-container .right-box ul>li{
     float:left;
     padding:0 5px;
@@ -66,6 +68,9 @@ a{text-decoration: none;color:#6C6C6C;}
 }
 .shortcut-container .right-box ul .li-1:hover{
     background:white;
+}
+.shortcut-container .right-box ul .li-1>a:hover{
+    color:red;
 }
 .shortcut-container .right-box ul .li-1:hover .mytaobao{
    visibility:visible;
@@ -87,13 +92,25 @@ a{text-decoration: none;color:#6C6C6C;}
     background:#EAE8EB;
     cursor:pointer;
 }
+/* 购物车 */
+.shortcut-container .right-box ul .li-2>a:hover{
+   color:red;
+}
 
-/* 我的收藏夹 */
+/* 收藏夹 */
 .shortcut-container .right-box ul .li-3{
     position: relative;
 }
 .shortcut-container .right-box ul .li-3:hover{
     background:white;
+}
+.shortcut-container .right-box ul .li-3>.svg-a-bx{
+    display:inline-block;
+}
+.shortcut-container .right-box ul .li-3>.svg-a-bx:hover>svg,
+.shortcut-container .right-box ul .li-3>.svg-a-bx:hover>a
+{
+    color:red;
 }
 .shortcut-container .right-box ul .li-3:hover .collections{
    visibility:visible;
@@ -115,14 +132,16 @@ a{text-decoration: none;color:#6C6C6C;}
     background:#EAE8EB;
     cursor:pointer;
 }
-
-
-
-.shortcut-container .right-box ul .li-5{
-   
+/* 商品分类 */
+.shortcut-container .right-box ul .li-4>a:hover{
+   color:red;
 }
+/* 免费开店 */
+.shortcut-container .right-box ul .li-5>a:hover{
+   color:red;
+}
+/* 小树枝 */
 .shortcut-container .right-box ul i{
-    
     margin-top:12px;
     margin-left:5px;
     margin-right:5px;
@@ -131,10 +150,22 @@ a{text-decoration: none;color:#6C6C6C;}
     height:13px;
     background:#DFDFE4;
 }
-
+/* 千牛卖家中心 */
+.shortcut-container .right-box ul .li-6>a:hover{
+    color:red;
+ }
+ /* 联系客服 */
+ .shortcut-container .right-box ul .li-7>a:hover{
+    color:red;
+ }
 /* 网站导航 */
-.shortcut-container .right-box ul>.li-8{
-    
+.shortcut-container .right-box ul>.li-8>.svg-a-bx{
+    display:inline-block;
+}
+.shortcut-container .right-box ul>.li-8>.svg-a-bx:hover>svg,
+.shortcut-container .right-box ul>.li-8>.svg-a-bx:hover>a
+{
+    color:red;
 }
 .shortcut-container .right-box ul>.li-8:hover{
     background:white;
