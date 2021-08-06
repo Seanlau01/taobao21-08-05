@@ -58,7 +58,7 @@ a{text-decoration: none;color:#6C6C6C;}
 .shortcut-container .right-box ul>li{
     float:left;
     padding:0 5px;
-    margin:0 10px;
+    margin:0 2px;
 
 }
 
@@ -206,25 +206,79 @@ a{text-decoration: none;color:#6C6C6C;}
 }
 
 
-
-
-
-
-
-
-
 /* header区 */
 header{
+    position: relative;
     height:122px;
     background:#E9E6E8;
 }
-.logo h1 .logo-bd {
+.logo{
+    position: absolute;
+    left:0;
+    top:33px;
+}
+.logo h1 .logo-db {
     display: block;
-    margin-left: 22px;
-    padding-top: 58px;
+    background:red;
     width: 142px;
-    height: 0;
+    height:58px;
+    margin-left:22px;
     overflow: hidden;
     text-indent: -9999px;
-    background: url(//gw.alicdn.com/imgextra/i3/O1CN01uRz3de23mzWofmPYX_!!6000000007299-2-tps-143-59.png) 0 0 no-repeat;
+    background: url(image/O1CN01uRz3de23mzWofmPYX_!!6000000007299-2-tps-143-59.png) 0 0 no-repeat;
+}
+.search{
+    position: absolute;
+    top:36px;
+    left:258px;
+    width: 632px;
+    height: 42px;
+    border:1px solid red;
+    border-radius:20px;
+    background:white;
+}
+.search>span{
+    float:left;
+    height:100%;
+    line-height:42px;
+    width: 75px;
+    font-size:12px;
+    padding-left:26px;
+}
+.search>i{
+    float:left;
+    margin:2px 0;
+    height:36px;
+    width:1px;
+    background:#F5F5F5;
+
+}
+.search>input{
+    float:left;
+    width: 476px;
+    height:100%;
+    border:none;
+    outline:none;
+    padding-left:10px;
+    font-size:12px;
+}
+/* --清除谷歌浏览器下的 search 叉号 */
+input::-webkit-search-cancel-button{
+  display: none;
+}
+/* --清除IE下的 search 叉号 */
+input[type=search]::-ms-clear{
+  display: none;
+}
+.search>button{
+    float:left;
+    margin-top:3px;
+    width: 75px;
+    height:34px;
+    background:linear-gradient(to right,#FF8F00,#FF5300);
+    border-radius:20px;
+    border:none;
+    outline:none;
+    font-size:18px;
+    color:white;
 }
