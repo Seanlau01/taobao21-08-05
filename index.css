@@ -228,7 +228,7 @@ header{
     margin-left:22px;
     overflow: hidden;
     text-indent: -9999px;
-    background: url(image/logo.png) 0 0 no-repeat;
+    background: url(images/logo.png) 0 0 no-repeat;
 }
 .search{
     position: absolute;
@@ -326,4 +326,26 @@ input[type=search]::-ms-clear{
 }
 .hotwords>a:hover{
    color:red;
+}
+/* 二维码 */
+.qrcode-bx{
+    position: absolute;
+    top:24px;
+    right:112px;
+    width: 75px;
+    height: 90px;
+    background:white;
+    text-align: center;
+    
+}
+.qrcode-bx>a>span{
+    font-size:12px;
+    color:red;
+}
+.qrcode-bx>a>h5{
+    display:inline-block;
+    width:64px;
+    height: 64px;
+    background:url(images/qrcode.png) no-repeat 0 0;
+    background-size:64px;
 }
