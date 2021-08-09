@@ -6,7 +6,7 @@ a{text-decoration: none;color:#6C6C6C;}
 .w{width:1194px;margin:0 auto;}
 .fl{float:left;}
 .fr{float:right;}
-.h{color:red;}
+.red{color:#F22E00;}
 .shortcut{
     height:36px;
     line-height:36px;
@@ -348,4 +348,39 @@ input[type=search]::-ms-clear{
     height: 64px;
     background:url(images/qrcode.png) no-repeat 0 0;
     background-size:64px;
+}
+/* nav */
+.nav{
+    background:white;
+    height: 558px;
+    border-radius:20px 20px 0 0;
+}
+.nav>.dropdown{
+    width: 200px;
+}
+.nav>.dropdown>dl>dt{
+    text-align: center;
+    height: 42px;
+    line-height: 42px;
+    color:#FF6200;
+    font-size:17px;
+}
+.nav>.dropdown>dl>dd{
+    position: relative;
+    height: 34px;
+    line-height: 34px;
+    padding-left:24px;
+    font-size:15px;
+}
+.nav>.dropdown>dl>dd>i{
+    position: absolute;
+    top:14px;
+    right:12px;
+    display:inline-block;
+    width: 8px;
+    height: 8px;
+   
+    border:1px solid;
+    border-color:transparent transparent grey grey;
+    transform:rotate(-135deg);
 }
