@@ -352,12 +352,16 @@ input[type=search]::-ms-clear{
 /* nav */
 .nav{
     background:white;
-    height: 558px;
+    /* height: 558px; */
+    height: 42px;
     border-radius:20px 20px 0 0;
 }
 .nav>.dropdown{
     float:left;
     width: 200px;
+    height:558px;
+    background:white;
+    border-radius:20px 0 0 0;
 }
 .nav>.dropdown>dl>dt{
     text-align: center;
@@ -402,9 +406,7 @@ input[type=search]::-ms-clear{
 .nav>.navitems{
     float:left;
 }
-.nav>.navitems>ul{
 
-}
 .nav>.navitems>ul>li{
     float:left;
     height: 42px;
@@ -447,4 +449,59 @@ input[type=search]::-ms-clear{
 {
    color:red;
    cursor:pointer;
+}
+/* main */
+.main>.box{
+    width: 1000px;
+    height: 516px;
+    background:white;
+    margin-left:194px;
+}
+.main>.box>.focus{
+    float:left;
+    /* width: 520px; */
+    width: 690px;
+    
+    height:100%;
+}
+.main>.box>.focus>.slide-main{ 
+    float:left;
+    width: 520px;
+    height: 280px;
+    background:yellow;
+    border-radius:15px;
+}
+.main>.box>.focus>.slide-main-right{
+    float:right;
+    width: 160px;
+    height: 280px;
+    background:purple;
+    border-radius:15px;
+}
+.main>.box>.focus>.slide-sub-top{
+    float:left;
+    width: 690px;
+    height: 30px;
+    background:white;
+}
+.main>.box>.focus>.slide-sub{
+    float:left;
+    width: 520px;
+    height: 206px;
+    background:yellow;
+    border-radius:15px;
+}
+.main>.box>.focus>.slide-sub-right{
+    float:right;
+    width: 160px;
+    height: 206px;
+    background:purple;
+    border-radius:15px;
+}
+/* user */
+.main>.box>.user{
+    float:right;
+    width: 290px;
+    background:blue;
+    height:100%;
 }
