@@ -372,6 +372,20 @@ input[type=search]::-ms-clear{
     padding-left:24px;
     font-size:15px;
 }
+.nav>.dropdown>dl>dd:hover{
+     background:#FFE4DB;
+     color:red;
+}
+.nav>.dropdown>dl>dd:hover a{
+    color:red;
+    
+}
+.nav>.dropdown>dl>dd:hover i{
+    border-color:transparent transparent red red;
+}
+.nav>.dropdown>dl>dd a:hover{
+    text-decoration:underline;
+}
 .nav>.dropdown>dl>dd>i{
     position: absolute;
     top:14px;
