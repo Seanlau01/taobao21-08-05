@@ -473,13 +473,22 @@ input[type=search]::-ms-clear{
     overflow:hidden;
 }
 .main>.box>.focus>.slide-main .img-box{
-   
+    position: absolute;
+    top:0;
+    left:0;
+    width: 2600px;
+    height: 280px;
+    
 }
 .main>.box>.focus>.slide-main .img-box a{
-    
+    float:left;
+    width: 520px;
+    height: 280px;
     
 }
 .main>.box>.focus>.slide-main .img-box a img{
+    width: 520px;
+    height: 280px;
     border-radius:15px;
 }
 .main>.box>.focus>.slide-main .pre,
@@ -525,7 +534,9 @@ input[type=search]::-ms-clear{
     background:white;
     margin:3px;
 }
-
+.main>.box>.focus>.slide-main>.slide-nav>ul>li.active{
+    background:#FF5000;
+}
 .main>.box>.focus>.slide-main-right{
     float:right;
     width: 160px;
