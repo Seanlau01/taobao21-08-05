@@ -588,19 +588,69 @@ input[type=search]::-ms-clear{
 .main>.box>.focus>.slide-sub-top>.right{
     float:left;
 }
+/* slide-sub */
 .main>.box>.focus>.slide-sub{
+    position: relative;
     float:left;
     width: 520px;
-    height: 206px;
-    background:yellow;
+    height: 200px;
+    background:#F6F6F6;
+    border-radius:15px;
+    overflow:hidden;
+}
+.main>.box>.focus>.slide-sub:hover .pre,
+.main>.box>.focus>.slide-sub:hover .next{
+    cursor:pointer;
+    display:block;
+}
+.main>.box>.focus>.slide-sub>.img-box{
+    width: 2600px;
+    padding:0 6px;
+   
+}
+.main>.box>.focus>.slide-sub>.img-box>a{
+    margin-right:3px;
+}
+.main>.box>.focus>.slide-sub>.img-box>a,
+.main>.box>.focus>.slide-sub>.img-box>a>img
+{
+  
     border-radius:15px;
 }
+.main>.box>.focus>.slide-sub>.pre,
+.main>.box>.focus>.slide-sub>.next
+{
+  position: absolute;
+  top:80px;
+  width: 30px;
+  height: 30px;
+  background:black;
+  opacity:0.3;
+  line-height:30px;
+  font-size:20px;
+  text-align: center;
+  color:white;
+  display:none;
+}
+.main>.box>.focus>.slide-sub>.pre{
+    left:-8px;
+    border-radius:0 15px 15px 0;
+}
+.main>.box>.focus>.slide-sub>.next{
+    right:-8px;
+    border-radius:15px 0 0 15px;
+}
+/* slide-sub-right */
 .main>.box>.focus>.slide-sub-right{
     float:right;
     width: 160px;
-    height: 206px;
+    height: 200px;
     background:purple;
     border-radius:15px;
+}
+.main>.box>.focus>.slide-sub-right>a,
+.main>.box>.focus>.slide-sub-right>a>img{
+    border-radius:12px;
 }
 /* user */
 .main>.box>.user{
