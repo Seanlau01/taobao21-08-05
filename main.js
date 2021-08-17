@@ -41,3 +41,14 @@ for(var i=0;i<sli_nav_li.length;i++){
     }
 
 }
+var timer=setInterval(function(){
+    current++
+    if(current===5){
+        current=0
+    }
+    sli_m_i_bx.style.left=-520*current+'px'
+    for(var j=0;j<sli_nav_li.length;j++){
+        sli_nav_li[j].className=""
+    }
+    sli_nav_li[current].className="active"
+},3000)
