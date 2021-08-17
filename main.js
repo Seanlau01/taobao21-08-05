@@ -81,4 +81,5 @@ var timer2=setInterval(function(){
         current2=0
     }
     sli_sub_i_bx.style.left=-520*current2+'px'
+    crt2_indicator.innerText=current2+1
 },3000)

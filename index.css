@@ -608,24 +608,20 @@ input[type=search]::-ms-clear{
     width: 2600px;
     height: 200px;
 }
-.main>.box>.focus>.slide-sub>.img-box>.cell{
-    padding:auto 0;
-    float:left;
-   width: 520px;
-   height: 200px;
-   
-}
-.main>.box>.focus>.slide-sub>.img-box a:first-child{
-     margin-right:7px; 
-     margin-left:6px;
-}
+
 .main>.box>.focus>.slide-sub>.img-box a{
     float:left;
+     margin-right:5px; 
+     margin-left:5px;
+}
+
+.main>.box>.focus>.slide-sub>.img-box a:nth-child(-n+2){
+   margin-top:25px;
 }
 .main>.box>.focus>.slide-sub>.img-box a,
 .main>.box>.focus>.slide-sub>.img-box a img
 {
-
+    width: 250px;
     border-radius:15px;
 }
 .main>.box>.focus>.slide-sub>.pre,
