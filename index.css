@@ -556,12 +556,37 @@ input[type=search]::-ms-clear{
     background:purple;
     border-radius:15px;
 }
-
+.main>.box>.focus>.slide-main-right>a,
+.main>.box>.focus>.slide-main-right>a>img{
+    border-radius:15px;
+}
+/* slide-sub-top */
 .main>.box>.focus>.slide-sub-top{
     float:left;
     width: 690px;
     height: 30px;
     background:white;
+}
+.main>.box>.focus>.slide-sub-top>.left{
+    float:left;
+    width: 520px;
+    margin-right:10px;
+}
+.main>.box>.focus>.slide-sub-top>.left span:first-Child{
+   color:#FF0036;
+}
+.main>.box>.focus>.slide-sub-top>.left span:nth-Child(2){
+    color:#999999;
+    font-size:14px;
+}  
+.main>.box>.focus>.slide-sub-top>.left span:nth-Child(3){
+    float:right;
+}
+.main>.box>.focus>.slide-sub-top>.left span:nth-Child(3)>span{
+    color:red;
+}
+.main>.box>.focus>.slide-sub-top>.right{
+    float:left;
 }
 .main>.box>.focus>.slide-sub{
     float:left;
