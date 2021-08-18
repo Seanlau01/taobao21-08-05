@@ -13,73 +13,96 @@ var next2=sli_sub.getElementsByClassName('next')[0]
 var current=0
 var current2=0
 
-next.onclick=function(){
-    current++
-    if(current===5){
-        current=0
+listenToPreButtonClicked()
+listenToNextButtonClicked()
+listenToSlideNavClicked()
+autoPlaySlideMain()
+listenToPre2ButtonClicked()
+listenToNext2ButtonClicked()
+autoPlaySlideSub()
+
+//封装函数区
+function rmActive(item){
+    for(var i=0;i<item.length;i++){
+        item[i].className=""
     }
-    sli_m_i_bx.style.left=-520*current+'px'
-    for(var j=0;j<sli_nav_li.length;j++){
-        sli_nav_li[j].className=""
-    }
-    sli_nav_li[current].className="active"
 }
-pre.onclick=function(){
-    current--
-    if(current===-1){
-        current=4
-    }
-    sli_m_i_bx.style.left=-520*current+'px'
-    for(var j=0;j<sli_nav_li.length;j++){
-        sli_nav_li[j].className=""
-    }
-    sli_nav_li[current].className="active"
+function addActive(item,index){
+    item[index].className="active"
 }
-for(var i=0;i<sli_nav_li.length;i++){
-    sli_nav_li[i].onclick=function(){
-        for(var j=0;j<sli_nav_li.length;j++){
-            sli_nav_li[j].className=""
+function move(item,n){
+    item.style.left=-520*n+'px'
+}
+function listenToPreButtonClicked(){
+    pre.onclick=function(){
+        current--
+        if(current===-1){
+            current=4
         }
-        current=this.getAttribute('data-index')
-        console.log(sli_nav_li[current])
-        sli_nav_li[current].className="active"
-        sli_m_i_bx.style.left=-520*current+'px'
+        move(sli_m_i_bx,current)
+        rmActive(sli_nav_li)
+        addActive(sli_nav_li,current)
     }
+}
+function listenToNextButtonClicked(){
+    next.onclick=function(){
+        current++
+        if(current===5){
+            current=0
+        }
+        move(sli_m_i_bx,current)
+        rmActive(sli_nav_li)
+        addActive(sli_nav_li,current)
+    }
+}
 
+function listenToSlideNavClicked(){
+    for(var i=0;i<sli_nav_li.length;i++){
+        sli_nav_li[i].onclick=function(){
+            rmActive(sli_nav_li)
+            current=this.getAttribute('data-index')
+            addActive(sli_nav_li,current)
+            move(sli_m_i_bx,current)
+        }
+    
+    }
 }
-var timer=setInterval(function(){
-    current++
-    if(current===5){
-        current=0
-    }
-    sli_m_i_bx.style.left=-520*current+'px'
-    for(var j=0;j<sli_nav_li.length;j++){
-        sli_nav_li[j].className=""
-    }
-    sli_nav_li[current].className="active"
-},3000)
-
-next2.onclick=function(){
-    current2++
-    if(current2===5){
-        current2=0
-    }
-    sli_sub_i_bx.style.left=-520*current2+'px'
+function autoPlaySlideMain(){
+    var timer=setInterval(function(){
+        current++
+        if(current===5){
+            current=0
+        }
+        move(sli_m_i_bx,current)
+        rmActive(sli_nav_li)
+        addActive(sli_nav_li,current)
+    },3000)
 }
-pre2.onclick=function(){
-    console.log(current2)
-    console.log(sli_sub_i_bx)
-    current2--
-    if(current2===-1){
-        current2=4
+function listenToPre2ButtonClicked(){
+    pre2.onclick=function(){
+        current2--
+        if(current2===-1){
+            current2=4
+        }
+        move(sli_sub_i_bx,current2)
     }
-    sli_sub_i_bx.style.left=-520*current2+'px'
 }
-var timer2=setInterval(function(){
-    current2++
-    if(current2===5){
-        current2=0
+function listenToNext2ButtonClicked(){
+    next2.onclick=function(){
+        current2++
+        if(current2===5){
+            current2=0
+        }
+        move(sli_sub_i_bx,current2)
     }
-    sli_sub_i_bx.style.left=-520*current2+'px'
-    crt2_indicator.innerText=current2+1
-},3000)
+}
+function autoPlaySlideSub(){
+    var timer2=setInterval(function(){
+        current2++
+        if(current2===5){
+            current2=0
+        }
+        move(sli_sub_i_bx,current2)
+        crt2_indicator.innerText=current2+1
+    },3000)
+}
