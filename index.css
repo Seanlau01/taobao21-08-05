@@ -587,6 +587,8 @@ input[type=search]::-ms-clear{
 }
 .main>.box>.focus>.slide-sub-top>.right{
     float:left;
+    color:#A1A1A1;
+    font-size:14px;
 }
 /* slide-sub */
 .main>.box>.focus>.slide-sub{
@@ -660,9 +662,40 @@ input[type=search]::-ms-clear{
     border-radius:12px;
 }
 /* user */
-.main>.box>.user{
+.main>.box>.col-right{
     float:right;
     width: 290px;
-    background:blue;
     height:100%;
+}
+.main>.box>.col-right>.user{
+    height: 120px;
+    text-align:center;
+    padding-top:3px;
+    margin-bottom:10px;
+    background:url(images/user-bgpic.jpg) no-repeat;
+}
+.main>.box>.col-right>.user>.avatar{
+    margin:0 auto;
+    display:block;
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    overflow:hidden;
+}
+.main>.box>.col-right>.user>p{
+    font-size:12px;
+}
+.main>.box>.col-right>.user>.gold-coin,
+.main>.box>.col-right>.user>.members
+{
+    padding:0px 10px 0px 20px;
+    font-size:14px;
+    color:#FF5000;
+    border-radius:15px;
+}
+.main>.box>.col-right>.user>.gold-coin{
+    background:#FFE4DB url(images/sprite.png) no-repeat 0 -572px;
+}
+.main>.box>.col-right>.user>.members{
+    background:#FFE4DB url(images/sprite.png) no-repeat 0 -526px;
 }
