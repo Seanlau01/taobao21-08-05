@@ -671,7 +671,6 @@ input[type=search]::-ms-clear{
     height: 120px;
     text-align:center;
     padding-top:3px;
-    margin-bottom:10px;
     background:url(images/user-bgpic.jpg) no-repeat;
 }
 .main>.box>.col-right>.user>.avatar{
@@ -698,4 +697,37 @@ input[type=search]::-ms-clear{
 }
 .main>.box>.col-right>.user>.members{
     background:#FFE4DB url(images/sprite.png) no-repeat 0 -526px;
+}
+/* buttons */
+.main>.box>.col-right>.buttons{
+    margin-top:-20px;
+    padding-left:10px;
+}
+.main>.box>.col-right>.buttons>a{
+    display:inline-block;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    color:white;
+    background:#FF5101;
+    border-radius:5px;
+}
+.main>.box>.col-right>.buttons>.login{
+    width: 92px;
+    margin-right:3px;
+}
+.main>.box>.col-right>.buttons>.register{
+    width: 75px;
+    margin-right:3px;
+}
+.main>.box>.col-right>.buttons>.shop{
+    width: 75px;
+}
+/* invite */
+.main>.box>.col-right>.inviteyou{
+    display:block;
+  margin-top:6px;
+}
+.main>.box>.col-right>.inviteyou>img{
+    width: 290px;
 }
