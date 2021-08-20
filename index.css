@@ -758,7 +758,7 @@ input[type=search]::-ms-clear{
 
 /*notice-content*/
 .main>.box>.col-right>.notice-content{
-
+  margin-bottom:10px;
 }
 .main>.box>.col-right>.notice-content>li{
   display:none;
@@ -779,4 +779,52 @@ input[type=search]::-ms-clear{
 }
 .main>.box>.col-right>.notice-content>li:nth-child(5)>a{
     margin-right:78px;
+}
+/* icon */
+.main>.box>.col-right>.icon{
+    
+    height: 155px;
+    width: 100%;
+   border-color:red;
+   border-collapse:collapse;
+   table-layout:fixed;
+}
+.main>.box>.col-right>.icon tr>td{
+    width: 70px;
+    height: 76px;
+    border:1px solid #F4F4F4;
+    text-align: center;
+   
+}
+.main>.box>.col-right>.icon tr>td>a>i{
+    
+    display:block;
+    width: 24px;
+    height: 24px;
+    margin:0 auto 4px;
+    background:url(images/sprite.png) no-repeat;
+}
+.main>.box>.col-right>.icon tr>td>a>span{
+    font-size:12px;
+}
+.main>.box>.col-right>.icon tr>td>a>.ico2{
+    background-position:0 -88px;
+}
+.main>.box>.col-right>.icon tr>td>a>.ico3{
+    background-position:0 -45px;
+}
+.main>.box>.col-right>.icon tr>td>a>.ico4{
+    background-position:0 -130px;
+}
+.main>.box>.col-right>.icon tr>td>a>.ico5{
+    background-position:0 -174px;
+}
+.main>.box>.col-right>.icon tr>td>a>.ico6{
+    background-position:0 -220px;
+}
+.main>.box>.col-right>.icon tr>td>a>.ico7{
+    background-position:0 -264px;
+}
+.main>.box>.col-right>.icon tr>td>a>.ico8{
+    background-position:0 -308px;
 }
