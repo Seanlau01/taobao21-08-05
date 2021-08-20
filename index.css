@@ -3,10 +3,17 @@
 ul,li{list-style:none;}
 body{background:#EAE8EB;overflow-y:scroll;}
 a{text-decoration: none;color:#6C6C6C;}
+.clearfix::after{
+   content:'';
+   display:block;
+   clear:both;
+}
 .w{width:1194px;margin:0 auto;}
 .fl{float:left;}
 .fr{float:right;}
 .red{color:#F22E00;}
+.disBlk{display:block;}
+.disNo{display:none;}
 .shortcut{
     height:36px;
     line-height:36px;
@@ -730,4 +737,46 @@ input[type=search]::-ms-clear{
 }
 .main>.box>.col-right>.inviteyou>img{
     width: 290px;
+}
+/* notice */
+.main>.box>.col-right>.notice{
+    font-size:14px;
+    font-weight: bold;
+    padding-left:20px;
+    margin-bottom:10px;
+}
+.main>.box>.col-right>.notice>li{
+    float:left;
+    margin-right:25px;
+}
+.main>.box>.col-right>.notice>li>a:hover{
+    color:red;
+}
+.main>.box>.col-right>.notice>li>a.active{
+    border-bottom:2px solid red;
+}
+
+/*notice-content*/
+.main>.box>.col-right>.notice-content{
+
+}
+.main>.box>.col-right>.notice-content>li{
+  display:none;
+}
+.main>.box>.col-right>.notice-content>li.active{
+    display:block;
+}
+.main>.box>.col-right>.notice-content>li>a{
+    font-size:14px;
+    font-weight: bold;
+}
+.main>.box>.col-right>.notice-content>li:nth-child(3)>a{
+    color:#FF5000;
+    margin-right:28px;
+}
+.main>.box>.col-right>.notice-content>li:nth-child(4)>a{
+    margin-right:26px;
+}
+.main>.box>.col-right>.notice-content>li:nth-child(5)>a{
+    margin-right:78px;
 }
