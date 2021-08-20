@@ -734,6 +734,7 @@ input[type=search]::-ms-clear{
 .main>.box>.col-right>.inviteyou{
     display:block;
   margin-top:6px;
+  margin-bottom:20px;
 }
 .main>.box>.col-right>.inviteyou>img{
     width: 290px;
@@ -827,4 +828,34 @@ input[type=search]::-ms-clear{
 }
 .main>.box>.col-right>.icon tr>td>a>.ico8{
     background-position:0 -308px;
+}
+/*app*/
+.main>.box>.col-right>.app{
+    /* padding-top:10px; */
+    padding-left:10px;
+}
+.main>.box>.col-right>.app>.title>h4{
+    display:inline-block;
+   margin-right:168px;
+   line-height: 28px;
+   height: 28px;
+}
+.main>.box>.col-right>.app>.title>span{
+    font-size:12px;
+    line-height:28px;
+    height: 28px;
+}
+.main>.box>.col-right>.app>.title>span>a:hover{
+    color:red;
+}
+.main>.box>.col-right>.app>.ico{
+
+}
+.main>.box>.col-right>.app>.ico>li{
+    float:left;
+    margin:0 10px 0;
+}
+.main>.box>.col-right>.app>.ico>li>a>img{
+    width: 32px;
+    height: 32px;
 }
