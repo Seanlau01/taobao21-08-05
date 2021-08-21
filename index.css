@@ -927,9 +927,16 @@ input[type=search]::-ms-clear{
 }
 
 .goods>.body>li>a>span{
-    font-size:18px;
+    font-size:16px;
+    width: 170px;
+    margin-left:8px;
 }
-.goods>.body>li>a>p{
+.goods>.body>li>a>p{  
     font-size:14px;
     color:#999999;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    width:180px;
+    margin-left:8px;
 }
