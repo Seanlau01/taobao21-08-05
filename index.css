@@ -940,49 +940,49 @@ input[type=search]::-ms-clear{
     width:180px;
     margin-left:8px;
 }
-/* *****************recommand************** */
-.recommand{
+/* *****************recommend************** */
+.recommend{
    background:white;
    height: 340px;
 }
-.recommand>.head{
+.recommend>.head{
     height:26px;
     padding-left:20px;
 }
-.recommand>.head>h2{
+.recommend>.head>h2{
     display:inline-block;
     font-weight:normal;
     word-spacing:3px;
 }
-.recommand>.head>i{
+.recommend>.head>i{
     display:inline-block;
     width: 65px;
     height: 20px;
-    background:url(images/recommand-head.png) no-repeat;
+    background:url(images/recommend-head.png) no-repeat;
     vertical-align:-3px;
 }
-.recommand>.body{
+.recommend>.body{
     padding-top:18px;
    padding-left:20px;
 }
-.recommand>.body>ul{
+.recommend>.body>ul{
     font-size:0;
 }
-.recommand>.body>ul>li{
+.recommend>.body>ul>li{
     display:inline-block;
    
 }
-.recommand>.body>ul>li:nth-of-type(-n+4){
+.recommend>.body>ul>li:nth-of-type(-n+4){
     margin-right:20px;
 }
-.recommand>.body>ul>li>a>.img-bx{
+.recommend>.body>ul>li>a>.img-bx{
     position: relative;
     width: 215px;
     height: 215px;
     border-radius:15px;
     overflow:hidden;
 }
-.recommand>.body>ul>li>a>.img-bx::after{
+.recommend>.body>ul>li>a>.img-bx::after{
     content:'';
     clear:both;
     display:block;
@@ -994,15 +994,15 @@ input[type=search]::-ms-clear{
    background:black;
    opacity:0.2;
 }
-.recommand>.body>ul>li:hover>a>.img-bx::after{
+.recommend>.body>ul>li:hover>a>.img-bx::after{
    background:black;
    opacity:0.13;
 }
-.recommand>.body>ul>li>a>.img-bx>img{
+.recommend>.body>ul>li>a>.img-bx>img{
     width: 215px;
     height: 215px;
 }
-.recommand>.body>ul>li>a>p{
+.recommend>.body>ul>li>a>p{
     width:215px;
     font-size:16px;
     overflow:hidden;
@@ -1013,15 +1013,68 @@ input[type=search]::-ms-clear{
     margin-bottom:10px;
 }
 
-.recommand>.body>ul>li>a>.price{
+.recommend>.body>ul>li>a>.price{
     font-size:18px;
     color:red;
     margin-right:3px;
 }
-.recommand>.body>ul>li>a>.price>i{
+.recommend>.body>ul>li>a>.price>i{
     font-size:12px;
     font-style:normal;
 }
-.recommand>.body>ul>li>a>.purchase-amount{
+.recommend>.body>ul>li>a>.purchase-amount{
     font-size:14px;
+}
+/* *******page-end ********/
+
+.page-end{
+    background:white;
+    overflow:hidden;
+    padding-bottom:50px;
+}
+.page-end>.hr{
+  padding:46px;
+  text-align:center;
+  background:white;
+  color:#CCCCD0;
+ 
+}
+.page-end>ul{
+    padding-left:20px;
+    font-size:0;
+    width:1300px;
+   
+}
+.page-end>ul>li{
+    float:left;
+    width: 220px;
+    height: 94px;
+    margin-right:100px;
+   
+}
+.page-end>ul>li>.head{
+    margin-bottom:10px;
+    height: 38px;
+}
+.page-end>ul>li>.head>svg{
+    display:inline-block;
+    width: 35px;
+    height: 30px;
+    margin-right:10px;
+}
+.page-end>ul>li>.head>span{
+    font-size:16px;
+    vertical-align:8px;
+  
+}
+
+.page-end>ul>li>.body{
+    width:226px;
+    font-size:0px;
+    height: 30px;
+}
+.page-end>ul>li>.body>a{
+    font-size:12px;
+    display:inline-block;
+    margin-right:14px;
 }
