@@ -1,13 +1,16 @@
-
-*{margin:0;padding:0;box-sizing:border-box;}
-ul,li{list-style:none;}
 body{background:#EAE8EB;overflow-y:scroll;}
-a{text-decoration: none;color:#6C6C6C;}
+a{color:#6C6C6C}
 .clearfix::after{
    content:'';
    display:block;
    clear:both;
 }
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
 .w{width:1194px;margin:0 auto;}
 .fl{float:left;}
 .fr{float:right;}
@@ -181,20 +184,19 @@ a{text-decoration: none;color:#6C6C6C;}
 }
 .shortcut-container .right-box ul>.li-8:hover .sites-nav{
    visibility:visible;
-   z-index:2;
+   z-index:3;
 }
 .shortcut-container .right-box ul>.li-8 .sites-nav{
    position: absolute;
    left:0;
    width:1194px;
-   width:1184px;
    height:314px;
    background:white;
    visibility:hidden;
+   border:1px solid #EFEFEF;
 }
-.shortcut-container .right-box ul>.li-8 .sites-nav li{
-    display:block;
-    width:270px;
+.shortcut-container .right-box ul>.li-8 .sites-nav>li{
+    width:24%;
 }
 .shortcut-container .right-box ul>.li-8 .sites-nav>.li-1,
 .shortcut-container .right-box ul>.li-8 .sites-nav>.li-2,
@@ -204,6 +206,23 @@ a{text-decoration: none;color:#6C6C6C;}
 }
 .shortcut-container .right-box ul>.li-8 .sites-nav>.li-1>h1{
    color:#F84404;
+}
+.shortcut-container .right-box ul>.li-8 .sites-nav>.li-1>.bd>ul>li{
+    width: 23%;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom:5px;
+}
+.shortcut-container .right-box ul>.li-8 .sites-nav>.li-1>.bd>ul>li>a{
+    text-align: center;
+    display:inline-block;
+    width: 40px;
+    height: 25px;
+    line-height: 25px;
+}
+.shortcut-container .right-box ul>.li-8 .sites-nav>.li-1>.bd>ul>li>a:hover{
+    background:red;
+    color:white;
 }
 .shortcut-container .right-box ul>.li-8 .sites-nav>.li-2>h1{
     color:#A6BB44;
