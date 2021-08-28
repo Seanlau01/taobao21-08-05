@@ -12,7 +12,8 @@ var next2=sli_sub.getElementsByClassName('next')[0]
 
 var current=0
 var current2=0
-
+var timer=0
+var timer2=0
 listenToPreButtonClicked()
 listenToNextButtonClicked()
 listenToSlideNavClicked()
@@ -20,6 +21,7 @@ autoPlaySlideMain()
 listenToPre2ButtonClicked()
 listenToNext2ButtonClicked()
 autoPlaySlideSub()
+listenToMouseEvent()
 
 //封装函数区
 function rmActive(item){
@@ -68,7 +70,7 @@ function listenToSlideNavClicked(){
     }
 }
 function autoPlaySlideMain(){
-    var timer=setInterval(function(){
+    timer=setInterval(function(){
         current++
         if(current===5){
             current=0
@@ -78,6 +80,7 @@ function autoPlaySlideMain(){
         addActive(sli_nav_li,current)
     },3000)
 }
+
 function listenToPre2ButtonClicked(){
     pre2.onclick=function(){
         current2--
@@ -97,7 +100,7 @@ function listenToNext2ButtonClicked(){
     }
 }
 function autoPlaySlideSub(){
-    var timer2=setInterval(function(){
+    timer2=setInterval(function(){
         current2++
         if(current2===5){
             current2=0
@@ -105,4 +108,18 @@ function autoPlaySlideSub(){
         move(sli_sub_i_bx,current2)
         crt2_indicator.innerText=current2+1
     },3000)
+}
+function listenToMouseEvent(){
+    sli_m_i_bx.addEventListener('mouseover',function(){
+        clearInterval(timer)
+    })
+    sli_sub_i_bx.addEventListener('mouseover',function(){
+        clearInterval(timer2)
+    })
+    sli_m_i_bx.addEventListener('mouseleave',function(){
+        autoPlaySlideMain()
+    })
+    sli_sub_i_bx.addEventListener('mouseleave',function(){
+        autoPlaySlideSub()
+    })
 }
