@@ -1285,3 +1285,15 @@ input[type=search]::-ms-clear{
     background:#FF710D;
     color:white;
 }
+/* kefu start*/
+.kefu{
+    position: absolute;
+    top:204px;
+    right:197px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background:url(widget/kefu.png) no-repeat 0 0;
+    background-size:50px;
+}
+/* kefu end */
