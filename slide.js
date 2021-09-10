@@ -9,11 +9,11 @@ var sli_sub=document.getElementsByClassName('slide-sub')[0]
 var sli_sub_i_bx=sli_sub.getElementsByClassName('img-box')[0]
 var pre2=sli_sub.getElementsByClassName('pre')[0]
 var next2=sli_sub.getElementsByClassName('next')[0]
-
 var current=0
 var current2=0
 var timer=0
 var timer2=0
+//函数执行区
 listenToPreButtonClicked()
 listenToNextButtonClicked()
 listenToSlideNavClicked()
@@ -22,8 +22,7 @@ listenToPre2ButtonClicked()
 listenToNext2ButtonClicked()
 autoPlaySlideSub()
 listenToMouseEvent()
-
-//封装函数区
+//函数封装区
 function rmActive(item){
     for(var i=0;i<item.length;i++){
         item[i].className=""
@@ -57,7 +56,6 @@ function listenToNextButtonClicked(){
         addActive(sli_nav_li,current)
     }
 }
-
 function listenToSlideNavClicked(){
     for(var i=0;i<sli_nav_li.length;i++){
         sli_nav_li[i].onclick=function(){
@@ -66,21 +64,14 @@ function listenToSlideNavClicked(){
             addActive(sli_nav_li,current)
             move(sli_m_i_bx,current)
         }
-    
     }
 }
 function autoPlaySlideMain(){
+    timer=null
     timer=setInterval(function(){
-        current++
-        if(current===5){
-            current=0
-        }
-        move(sli_m_i_bx,current)
-        rmActive(sli_nav_li)
-        addActive(sli_nav_li,current)
+        next.click()
     },3000)
 }
-
 function listenToPre2ButtonClicked(){
     pre2.onclick=function(){
         current2--
@@ -100,13 +91,9 @@ function listenToNext2ButtonClicked(){
     }
 }
 function autoPlaySlideSub(){
+    timer2=null
     timer2=setInterval(function(){
-        current2++
-        if(current2===5){
-            current2=0
-        }
-        move(sli_sub_i_bx,current2)
-        crt2_indicator.innerText=current2+1
+        next2.click()
     },3000)
 }
 function listenToMouseEvent(){
@@ -116,10 +103,10 @@ function listenToMouseEvent(){
     sli_sub_i_bx.addEventListener('mouseover',function(){
         clearInterval(timer2)
     })
-    sli_m_i_bx.addEventListener('mouseleave',function(){
+    sli_m_i_bx.addEventListener('mouseout',function(){
         autoPlaySlideMain()
     })
-    sli_sub_i_bx.addEventListener('mouseleave',function(){
+    sli_sub_i_bx.addEventListener('mouseout',function(){
         autoPlaySlideSub()
     })
 }

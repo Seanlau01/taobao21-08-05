@@ -515,7 +515,7 @@ input[type=search]::-ms-clear{
     position: absolute;
     top:0;
     left:0;
-    width: 2600px;
+    width:500%;
     height: 280px;
     
 }
