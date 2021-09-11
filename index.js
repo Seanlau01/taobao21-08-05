@@ -1,13 +1,14 @@
 window.addEventListener('load',function(){
     const avatar=document.querySelector('.user .avatar img')
     const avatar_bottom_btns=document.querySelector('.main .box .col-right .buttons')
-    const register=document.querySelector('.shortcut .shortcut-container .register')
+    const register_a2=document.querySelector('.shortcut .shortcut-container .left-box .a-2')
     let params=location.search
     let arr=params.substr(1).split('=')
        if(arr[1]){
         uname_1.innerText=arr[1]
         uname_2.innerText='Hi! '+arr[1]
-        register.innerText="手机逛淘宝"
+        register_a2.innerText="手机逛淘宝"
+        register_a2.classList.remove("register")
         avatar.src="widget/kefu.png"
         avatar.style.width="50px"
         avatar_bottom_btns.innerHTML=`

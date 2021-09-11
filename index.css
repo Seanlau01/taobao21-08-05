@@ -269,6 +269,7 @@ header{
     text-indent: -9999px;
     background: url(images/logo.png) 0 0 no-repeat;
 }
+/*搜索模块*/
 .search{
     position: absolute;
     position: relative;
@@ -315,8 +316,6 @@ header{
     cursor:pointer;
    color:red;
 }
-
-
 .search>i{
     float:left;
     margin:2px 0;
@@ -355,6 +354,8 @@ input[type=search]::-ms-clear{
     color:white;
     cursor:pointer;
 }
+/*搜索模块结束*/
+
 /* 热词 */
 .hotwords{
     position: absolute;
@@ -388,6 +389,125 @@ input[type=search]::-ms-clear{
     background:url(images/qrcode.png) no-repeat 0 0;
     background-size:64px;
 }
+/*固定定位搜索模块  开始*/
+.fixed-search-bar{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background:white;
+    height: 54px;
+    z-index:3;
+    display:none;
+}
+.fixed-search-bar .bx{
+    position: relative;
+}
+/*logo-2  模块开始*/
+.fixed-search-bar .bx .logo-2{
+    position: absolute;
+    top:8px;
+    height: 54px;
+}
+.fixed-search-bar .bx .logo-2 h1 .logo-db {
+    display: block;
+    background:red;
+    width: 80px;
+    height:54px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(images/logo-small.png) 0 0 no-repeat;
+    background-size:80px auto;
+    
+}
+/*logo-2  模块结束*/
+/*搜索模块-2   开始*/
+.fixed-search-bar .bx .search-2{
+    position: absolute;
+    position: relative;
+    top:7px;
+    left:338px;
+    width: 632px;
+    height: 40px;
+    border:2px solid red;
+    border-radius:20px;
+    background:white;
+}
+/* 宝贝 */
+.fixed-search-bar .bx .search-2>.treasure{
+    float:left;
+    height:100%;
+    line-height:40px;
+    width: 75px;
+    font-size:12px;
+    padding-left:26px;
+   background:#F4F4F4;
+   border-radius:15px 0 0 15px;
+}
+.fixed-search-bar .bx .search-2>.treasure:hover>.treasure-dropdown{
+   visibility:visible;
+  
+}
+.fixed-search-bar .bx .search-2>.treasure>.treasure-dropdown{
+    position: absolute;
+    left:0px;
+    top:28px;
+    width:75px;
+    background:#F4F4F4;
+    font-size:12px;
+    visibility:hidden;
+    padding-top:10px;
+    padding-bottom:13px;
+    
+}
+.fixed-search-bar .bx .search-2>.treasure>.treasure-dropdown>a{
+    display:block;
+    text-align: center;
+    line-height:40px;
+}
+
+.fixed-search-bar .bx .search-2>.treasure>.treasure-dropdown>a:hover{
+    cursor:pointer;
+   color:red;
+}
+.fixed-search-bar .bx .search-2>i{
+    float:left;
+    margin:2px 0;
+    height:34px;
+    width:1px;
+    background:#F5F5F5;
+}
+.fixed-search-bar .bx .search-2>input{
+    float:left;
+    width: 476px;
+    height:100%;
+    border:none;
+    outline:none;
+    padding-left:10px;
+    font-size:12px;
+}
+/* --清除谷歌浏览器下的 search 叉号 */
+input::-webkit-search-cancel-button{
+  display: none;
+}
+/* --清除IE下的 search 叉号 */
+input[type=search]::-ms-clear{
+  display: none;
+}
+.fixed-search-bar .bx .search-2>button{
+    float:left;
+    width: 76px;
+    height:36px;
+    background:#FF4200;
+    border-radius:0 15px 15px 0;
+    border:none;
+    outline:none;
+    font-size:18px;
+    color:white;
+    cursor:pointer;
+}
+/*搜索模块-2   结束*/
+/*固定定位搜索模块  结束*/
 /* nav */
 .nav{
     background:white;

@@ -1,5 +1,6 @@
 const tool=document.querySelector('.tool')
 const goods=document.querySelector('.goods')
+const search_bar=document.querySelector('.fixed-search-bar')
 let lock=true
 document.addEventListener('scroll',function(){
     if(window.pageYOffset > 490){
@@ -28,9 +29,9 @@ document.addEventListener('scroll',function(){
         }
     }
    
-
-
-
-
-
+    if(window.scrollY>114){
+        search_bar.style.display="block"
+    }else{
+        search_bar.style.display="none"
+    }
 })
