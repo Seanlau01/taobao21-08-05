@@ -1254,10 +1254,10 @@ input[type=search]::-ms-clear{
 }
 /************ tool *************/
 .tool{
-    position: fixed;
-    top:74px;
+    position: absolute;
+    top:490px;
     right:20px;
-    height: 200px;
+    /* height: 200px; */
     width: 50px;
     border-radius:10px;
     background:white;
