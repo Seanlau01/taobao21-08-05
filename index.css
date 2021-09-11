@@ -1285,15 +1285,41 @@ input[type=search]::-ms-clear{
     background:#FF710D;
     color:white;
 }
-/* kefu start*/
-.kefu{
-    position: absolute;
-    top:204px;
-    right:197px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background:url(widget/kefu.png) no-repeat 0 0;
-    background-size:50px;
+/* register-form start*/
+.register-form{
+    position: fixed;
+    top:100px;
+    left:50%;
+    transform:translateX(-50%);
+    width: 600px;
+    height: 400px;
+    padding:20px;
+   border:1px solid #dcdcdc;
+   background:white;
+   display:none;
 }
-/* kefu end */
+.register-form .close{
+    position:absolute;
+    top:0;
+    right:0;
+    display:block;
+    width:40px;
+    height: 25px;
+    line-height:25px;
+    text-align:center;
+    background:#DEE1E6;
+    color:#1B1C1C;
+    cursor:pointer;
+}
+.register-form .close:hover{
+  background:red;
+  color:white;
+}
+.register-form label{
+   height: 30px;
+}
+.register-form input{
+    height: 30px;
+    padding-left:10px;
+ }
+/* register-form end */

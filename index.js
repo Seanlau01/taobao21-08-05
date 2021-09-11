@@ -1,6 +1,7 @@
 window.addEventListener('load',function(){
     const avatar=document.querySelector('.user .avatar img')
     const avatar_bottom_btns=document.querySelector('.main .box .col-right .buttons')
+    const register=document.querySelector('.shortcut .shortcut-container .register')
     let params=location.search
     let arr=params.substr(1).split('=')
        if(arr[1]){
