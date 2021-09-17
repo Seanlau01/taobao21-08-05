@@ -9,7 +9,7 @@ window.addEventListener('load',function(){
         uname_2.innerText='Hi! '+arr[1]
         register_a2.innerText="手机逛淘宝"
         register_a2.classList.remove("register")
-        avatar.src="widget/kefu.png"
+        avatar.src="widget/user.png"
         avatar.style.width="50px"
         avatar_bottom_btns.innerHTML=`
         <ul style="font-size:13px;width:100%">
